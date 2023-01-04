@@ -16,7 +16,7 @@ const linking = {
                 path:'home'
             },
             Details: {
-                path:'details'
+                path:'details/:personId'
             }
         }
     }

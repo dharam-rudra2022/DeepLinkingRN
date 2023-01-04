@@ -22,9 +22,9 @@ const HomeScreen = ({navigation}) => {
   const renderList = ({item}) => {
     return (
       <Pressable
-        onPress={() => alert('Navigate to Details screen')}
-        style={{paddingHorizontal: 10}}>
-        <Text style={{fontSize: 24, color: '#000'}}>{item.name}</Text>
+      onPress={() => navigation.navigate('Details', { personDetailsId: item.id })}
+      style={{paddingHorizontal: 10}}>
+        <Text style={{fontSize: 16, color: '#000'}}>{item.name}</Text>
       </Pressable>
     );
   };
